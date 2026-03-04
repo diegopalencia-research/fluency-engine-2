@@ -1,0 +1,229 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "Pre-built scenario library for Fluency Engine - Coach can edit this file to add/modify scenarios",
+    "last_updated": "2025-03-05"
+  },
+  "scenarios": {
+    "A1": {
+      "free_response": [
+        {
+          "id": "a1_fr_001",
+          "prompt": "Introduce yourself. Say your name, where you are from, and what you do.",
+          "context": "You are meeting someone new at a social event.",
+          "target_structure": "Present simple for routines and identity",
+          "example_opener": "Hello, my name is...",
+          "vocabulary_hints": ["name", "from", "work", "student"],
+          "evaluation_focus": "Basic sentence structure, subject pronouns",
+          "duration_seconds": 30
+        },
+        {
+          "id": "a1_fr_002",
+          "prompt": "Describe your daily routine. What time do you wake up, eat, and go to sleep?",
+          "context": "A friend wants to know about your typical day.",
+          "target_structure": "Present simple with time expressions",
+          "example_opener": "I usually wake up at...",
+          "vocabulary_hints": ["wake up", "breakfast", "lunch", "dinner", "sleep"],
+          "evaluation_focus": "Time expressions, daily routine vocabulary",
+          "duration_seconds": 45
+        },
+        {
+          "id": "a1_fr_003",
+          "prompt": "Talk about your family. How many people are in your family and what are their names?",
+          "context": "You are sharing information about your family with a classmate.",
+          "target_structure": "Possessive adjectives and family vocabulary",
+          "example_opener": "There are... people in my family.",
+          "vocabulary_hints": ["mother", "father", "sister", "brother", "family"],
+          "evaluation_focus": "Family vocabulary, numbers, possessive adjectives",
+          "duration_seconds": 30
+        }
+      ],
+      "narrative": [
+        {
+          "id": "a1_na_001",
+          "prompt": "Describe your favorite place in your city or town. Where is it and why do you like it?",
+          "context": "A tourist is asking for recommendations.",
+          "target_structure": "There is/are, descriptive adjectives",
+          "example_opener": "My favorite place is...",
+          "vocabulary_hints": ["park", "restaurant", "beautiful", "nice", "quiet"],
+          "evaluation_focus": "Descriptive language, location expressions",
+          "duration_seconds": 45
+        }
+      ]
+    },
+    "A2": {
+      "free_response": [
+        {
+          "id": "a2_fr_001",
+          "prompt": "Describe your best friend. What does he/she look like and what do you like to do together?",
+          "context": "You are telling someone about your closest friend.",
+          "target_structure": "Present simple, descriptive adjectives",
+          "example_opener": "My best friend is...",
+          "vocabulary_hints": ["tall", "friendly", "funny", "together", "hobbies"],
+          "evaluation_focus": "Physical descriptions, personality adjectives",
+          "duration_seconds": 60
+        },
+        {
+          "id": "a2_fr_002",
+          "prompt": "Talk about your last weekend. What did you do on Saturday and Sunday?",
+          "context": "Your colleague is asking about your weekend.",
+          "target_structure": "Past simple for completed actions",
+          "example_opener": "Last weekend, I...",
+          "vocabulary_hints": ["went", "visited", "watched", "ate", "had"],
+          "evaluation_focus": "Past simple verbs, time expressions",
+          "duration_seconds": 60
+        }
+      ],
+      "narrative": [
+        {
+          "id": "a2_na_001",
+          "prompt": "Tell a story about a memorable trip you took. Where did you go and what happened?",
+          "context": "You are sharing a travel experience with friends.",
+          "target_structure": "Past simple narrative with sequencing words",
+          "example_opener": "Last year, I went to...",
+          "vocabulary_hints": ["first", "then", "after", "finally", "trip"],
+          "evaluation_focus": "Sequencing connectors, past tense narration",
+          "duration_seconds": 60
+        }
+      ],
+      "retell": [
+        {
+          "id": "a2_rt_001",
+          "prompt": "Retell the story of your favorite movie or book in your own words.",
+          "context": "Someone wants to know if they should watch/read it.",
+          "target_structure": "Present simple for plot summary",
+          "example_opener": "My favorite movie is called...",
+          "vocabulary_hints": ["story", "character", "happens", "ending", "recommend"],
+          "evaluation_focus": "Plot summary, basic connectors",
+          "duration_seconds": 60
+        }
+      ]
+    },
+    "B1": {
+      "free_response": [
+        {
+          "id": "b1_fr_001",
+          "prompt": "Describe a skill you would like to learn in the future. Why do you want to learn it and how will you do it?",
+          "context": "You are discussing personal development goals.",
+          "target_structure": "Would like to, future plans",
+          "example_opener": "One skill I would like to learn is...",
+          "vocabulary_hints": ["improve", "practice", "goal", "achieve", "learn"],
+          "evaluation_focus": "Future intentions, conditional reasoning",
+          "duration_seconds": 60
+        }
+      ],
+      "opinion": [
+        {
+          "id": "b1_op_001",
+          "prompt": "Do you think social media is good or bad for society? Give reasons for your opinion.",
+          "context": "You are participating in a class discussion.",
+          "target_structure": "Opinion expressions with supporting arguments",
+          "example_opener": "In my opinion, social media is...",
+          "vocabulary_hints": ["connect", "communication", "opinion", "however", "because"],
+          "evaluation_focus": "Opinion language, contrast connectors",
+          "duration_seconds": 60
+        },
+        {
+          "id": "b1_op_002",
+          "prompt": "Is it better to work from home or in an office? Explain your preference.",
+          "context": "A job interviewer is asking about your work style.",
+          "target_structure": "Comparative structures, preference expressions",
+          "example_opener": "I believe working from home/office is better because...",
+          "vocabulary_hints": ["flexible", "productive", "commute", "environment", "prefer"],
+          "evaluation_focus": "Comparisons, giving reasons",
+          "duration_seconds": 60
+        }
+      ],
+      "problem_solve": [
+        {
+          "id": "b1_ps_001",
+          "prompt": "You have a conflict with a coworker who is not doing their share of the work. How would you handle this situation?",
+          "context": "You need to resolve a workplace issue professionally.",
+          "target_structure": "Conditional sentences, problem-solving language",
+          "example_opener": "If I had this problem, I would...",
+          "vocabulary_hints": ["discuss", "solution", "approach", "communicate", "resolve"],
+          "evaluation_focus": "Conditional reasoning, professional communication",
+          "duration_seconds": 60
+        }
+      ]
+    },
+    "B2": {
+      "opinion": [
+        {
+          "id": "b2_op_001",
+          "prompt": "Some people believe that technology makes us more isolated, while others think it connects us better. What is your view?",
+          "context": "You are writing an essay or participating in a debate.",
+          "target_structure": "Balanced argumentation, concession language",
+          "example_opener": "This is a complex issue with valid points on both sides...",
+          "vocabulary_hints": ["isolated", "connected", "nevertheless", "admittedly", "perspective"],
+          "evaluation_focus": "Balanced arguments, concession connectors",
+          "duration_seconds": 75
+        }
+      ],
+      "comparison": [
+        {
+          "id": "b2_cp_001",
+          "prompt": "Compare online education with traditional classroom learning. What are the advantages and disadvantages of each?",
+          "context": "You are advising a school on educational methods.",
+          "target_structure": "Comparative structures, contrastive connectors",
+          "example_opener": "Online and traditional education have distinct characteristics...",
+          "vocabulary_hints": ["flexibility", "interaction", "whereas", "conversely", "aspect"],
+          "evaluation_focus": "Structured comparison, sophisticated connectors",
+          "duration_seconds": 75
+        }
+      ],
+      "debate_opener": [
+        {
+          "id": "b2_db_001",
+          "prompt": "Argue for or against this statement: 'Money cannot buy happiness.' Present a compelling 60-second argument.",
+          "context": "You are opening a debate on this topic.",
+          "target_structure": "Persuasive language, rhetorical structures",
+          "example_opener": "While money provides comfort, true happiness comes from...",
+          "vocabulary_hints": ["fulfillment", "relationships", "experiences", "ultimately", "genuine"],
+          "evaluation_focus": "Persuasive techniques, rhetorical connectors",
+          "duration_seconds": 60
+        }
+      ]
+    },
+    "C1": {
+      "opinion": [
+        {
+          "id": "c1_op_001",
+          "prompt": "To what extent should governments regulate artificial intelligence development? Consider ethical, economic, and security implications.",
+          "context": "You are presenting at a policy conference.",
+          "target_structure": "Hedging language, nuanced argumentation",
+          "example_opener": "The regulation of AI presents a multifaceted challenge that requires careful consideration...",
+          "vocabulary_hints": ["multifaceted", "implications", "arguably", "to some extent", "nuanced"],
+          "evaluation_focus": "Hedging, sophisticated vocabulary, complex reasoning",
+          "duration_seconds": 90
+        }
+      ],
+      "comparison": [
+        {
+          "id": "c1_cp_001",
+          "prompt": "Analyze the impact of globalization on cultural identity. Has it led to homogenization or enriched diversity?",
+          "context": "You are contributing to an academic discussion.",
+          "target_structure": "Academic discourse, analytical language",
+          "example_opener": "Globalization's impact on cultural identity is a paradoxical phenomenon...",
+          "vocabulary_hints": ["homogenization", "diversity", "paradoxical", "phenomenon", "nuanced"],
+          "evaluation_focus": "Academic register, analytical connectors",
+          "duration_seconds": 90
+        }
+      ]
+    },
+    "C2": {
+      "debate_opener": [
+        {
+          "id": "c2_db_001",
+          "prompt": "Evaluate this proposition: 'The concept of national sovereignty is becoming obsolete in an interconnected world.' Present a sophisticated argument.",
+          "context": "You are addressing an international forum.",
+          "target_structure": "Abstract reasoning, register variation",
+          "example_opener": "The notion of sovereignty, once considered the cornerstone of international relations...",
+          "vocabulary_hints": ["sovereignty", "obsolete", "cornerstone", "paradigm", "interconnected"],
+          "evaluation_focus": "Abstract concepts, register control, sophisticated discourse",
+          "duration_seconds": 90
+        }
+      ]
+    }
+  }
+}

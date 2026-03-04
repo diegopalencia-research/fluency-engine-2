@@ -1,0 +1,44 @@
+{
+  "types": {
+    "sequencing": {
+      "label": "Sequencing",
+      "cefr_introduced": "A2",
+      "words": ["first", "firstly", "second", "secondly", "third", "thirdly", "then", "next", "after that", "finally", "lastly", "to begin with", "to start with", "subsequently"]
+    },
+    "contrast": {
+      "label": "Contrast",
+      "cefr_introduced": "B1",
+      "words": ["but", "however", "although", "though", "even though", "whereas", "while", "on the other hand", "on the contrary", "nevertheless", "nonetheless", "yet", "despite", "in spite of", "that said"]
+    },
+    "cause_effect": {
+      "label": "Cause & Effect",
+      "cefr_introduced": "B1",
+      "words": ["because", "so", "therefore", "thus", "hence", "as a result", "consequently", "for this reason", "due to", "owing to", "since", "as", "because of this", "this means that"]
+    },
+    "addition": {
+      "label": "Addition",
+      "cefr_introduced": "B1",
+      "words": ["also", "and", "in addition", "furthermore", "moreover", "besides", "what is more", "as well as", "not only", "too", "additionally", "on top of that"]
+    },
+    "exemplification": {
+      "label": "Examples",
+      "cefr_introduced": "B2",
+      "words": ["for example", "for instance", "such as", "like", "to illustrate", "in particular", "specifically", "namely", "that is to say", "i.e.", "e.g."]
+    },
+    "concession": {
+      "label": "Concession",
+      "cefr_introduced": "B2",
+      "words": ["admittedly", "of course", "granted", "certainly", "it is true that", "even if", "even though", "while it is true", "i accept that", "fair enough"]
+    },
+    "summary": {
+      "label": "Summary & Conclusion",
+      "cefr_introduced": "B2",
+      "words": ["in conclusion", "to conclude", "to summarise", "in summary", "overall", "all in all", "in short", "to sum up", "on balance", "taking everything into account"]
+    },
+    "hedging": {
+      "label": "Hedging & Modality",
+      "cefr_introduced": "C1",
+      "words": ["it seems that", "it appears that", "arguably", "it could be argued", "one might say", "to some extent", "in some ways", "it is possible that", "perhaps", "presumably", "apparently"]
+    }
+  }
+}

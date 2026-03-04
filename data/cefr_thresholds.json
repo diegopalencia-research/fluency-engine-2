@@ -1,0 +1,71 @@
+{
+  "levels": {
+    "A1": {
+      "label": "Beginner",
+      "wpm_min": 60, "wpm_max": 80, "wpm_target": 70,
+      "filler_per_min_max": 8.0, "pause_per_min_max": 12.0,
+      "connector_count_min": 0,
+      "score_min": 30, "score_max": 40,
+      "response_seconds_target": 30,
+      "grammar_targets": ["present_simple", "basic_questions"],
+      "vocabulary_band": "A1 — high-frequency words only (first 500)"
+    },
+    "A2": {
+      "label": "Elementary",
+      "wpm_min": 80, "wpm_max": 100, "wpm_target": 90,
+      "filler_per_min_max": 6.0, "pause_per_min_max": 10.0,
+      "connector_count_min": 1,
+      "score_min": 40, "score_max": 52,
+      "response_seconds_target": 45,
+      "grammar_targets": ["present_simple", "past_simple", "sequencing"],
+      "vocabulary_band": "A2 — high-frequency words (first 1000)"
+    },
+    "B1": {
+      "label": "Intermediate",
+      "wpm_min": 100, "wpm_max": 130, "wpm_target": 115,
+      "filler_per_min_max": 4.0, "pause_per_min_max": 8.0,
+      "connector_count_min": 2,
+      "score_min": 52, "score_max": 65,
+      "response_seconds_target": 60,
+      "grammar_targets": ["past_simple", "present_perfect", "conditionals_zero_first", "third_person_s"],
+      "vocabulary_band": "B1 — general vocabulary (first 3000)"
+    },
+    "B2": {
+      "label": "Upper-Intermediate",
+      "wpm_min": 130, "wpm_max": 155, "wpm_target": 142,
+      "filler_per_min_max": 3.0, "pause_per_min_max": 6.0,
+      "connector_count_min": 3,
+      "score_min": 65, "score_max": 76,
+      "response_seconds_target": 75,
+      "grammar_targets": ["conditionals_second_third", "passive_voice", "reported_speech"],
+      "vocabulary_band": "B2 — varied vocabulary, some low-frequency"
+    },
+    "C1": {
+      "label": "Advanced",
+      "wpm_min": 155, "wpm_max": 175, "wpm_target": 165,
+      "filler_per_min_max": 2.0, "pause_per_min_max": 4.0,
+      "connector_count_min": 4,
+      "score_min": 76, "score_max": 88,
+      "response_seconds_target": 90,
+      "grammar_targets": ["modality_hedging", "nominalisation", "discourse_markers"],
+      "vocabulary_band": "C1 — abstract and academic vocabulary"
+    },
+    "C2": {
+      "label": "Mastery",
+      "wpm_min": 160, "wpm_max": 180, "wpm_target": 170,
+      "filler_per_min_max": 1.5, "pause_per_min_max": 3.0,
+      "connector_count_min": 5,
+      "score_min": 88, "score_max": 100,
+      "response_seconds_target": 90,
+      "grammar_targets": ["full_discourse_control", "register_variation", "pragmatic_competence"],
+      "vocabulary_band": "C2 — full range including rare and idiomatic"
+    }
+  },
+  "progression_rules": {
+    "advance_after_sessions": 3,
+    "advance_threshold_pct": 0.85,
+    "drop_after_sessions": 2,
+    "drop_threshold_pct": 0.60,
+    "level_order": ["A1", "A2", "B1", "B2", "C1", "C2"]
+  }
+}

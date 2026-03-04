@@ -1,0 +1,275 @@
+{
+  "patterns": {
+    "third_person_s": {
+      "label": "Third person singular -s",
+      "description": "Missing -s in third person singular present simple",
+      "examples": ["he go", "she work", "it cost"],
+      "patterns": [
+        "\\b(he|she|it)\\s+([a-z]+)(?<!s)\\s+(?:to|the|a|an|every|each|always|usually|often|sometimes|never|everyday|daily)",
+        "\\b(he|she|it)\\s+(?:don't|doesn't)\\s+([a-z]+)"
+      ],
+      "cefr_levels": ["A2", "B1", "B2"],
+      "severity": "high"
+    },
+    "past_simple_regular": {
+      "label": "Past simple regular verbs",
+      "description": "Missing -ed ending for regular past tense verbs",
+      "examples": ["I walk to school yesterday", "She work last week"],
+      "patterns": [
+        "\\b(I|you|we|they|he|she|it)\\s+([a-z]+)(?<!ed)\\s+(yesterday|last\\s+(week|month|year|night|Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday)|ago|in\\s+\\d{4})"
+      ],
+      "cefr_levels": ["A2", "B1"],
+      "severity": "high"
+    },
+    "past_simple_irregular": {
+      "label": "Past simple irregular verbs",
+      "description": "Common irregular past tense errors",
+      "examples": ["I goed", "she taked", "we buyed"],
+      "patterns": [
+        "\\b(goed|taked|buyed|eated|drinked|runned|sleeped|speaked|writed|readed|seed|thinked|knowed|bringed|buyed|catched|falled|feeled|finded|getted|gived|heared|holded|hurted|leaved|losed|maked|meeted|payed|putted|sayed|sended|shuted|sitted|standed|teached|telled|thinked|understanded|waked|wearied|winned)\\b"
+      ],
+      "cefr_levels": ["A2", "B1"],
+      "severity": "high"
+    },
+    "present_perfect": {
+      "label": "Present perfect formation",
+      "description": "Errors in present perfect (have/has + past participle)",
+      "examples": ["I have went", "She has see", "They have did"],
+      "patterns": [
+        "\\b(have|has)\\s+(?:went|see|did|eat|take|give|know|write|read|break|choose|come|drive|fall|fly|forget|get|go|grow|hide|hit|hold|hurt|keep|leave|lend|lose|make|mean|meet|pay|put|run|say|sell|send|shut|sing|sit|sleep|speak|spend|stand|steal|swim|take|teach|tell|think|understand|wake|wear|win|write)\\b"
+      ],
+      "cefr_levels": ["B1", "B2"],
+      "severity": "medium"
+    },
+    "article_usage": {
+      "label": "Article usage (a/an/the)",
+      "description": "Missing or incorrect articles",
+      "examples": ["I am student", "She is doctor", "I like music"],
+      "patterns": [
+        "\\b(I am|you are|he is|she is|it is|we are|they are)\\s+([a-z]+)(?:\\s+(?:from|who|that|and|or|but|$))",
+        "\\b(a)\\s+([aeiou])"
+      ],
+      "cefr_levels": ["A1", "A2", "B1"],
+      "severity": "medium"
+    },
+    "plural_nouns": {
+      "label": "Plural nouns",
+      "description": "Missing plural -s or incorrect plural forms",
+      "examples": ["two book", "many friend", "several city"],
+      "patterns": [
+        "\\b(two|three|four|five|six|seven|eight|nine|ten|many|several|some|a few|a lot of|lots of|plenty of|numerous|various)\\s+([a-z]+)(?<!s|es|ies)\\b(?=\\s+(?:and|or|that|which|who|in|on|at|for|with|from|to|\\.|,|$))"
+      ],
+      "cefr_levels": ["A1", "A2"],
+      "severity": "medium"
+    },
+    "prepositions_time": {
+      "label": "Prepositions of time",
+      "description": "Incorrect prepositions for time expressions",
+      "examples": ["in Monday", "at 2023", "on December"],
+      "patterns": [
+        "\\bin\\s+(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\\b",
+        "\\bat\\s+(January|February|March|April|May|June|July|August|September|October|November|December)\\b",
+        "\\bon\\s+\\d{4}\\b"
+      ],
+      "cefr_levels": ["A2", "B1"],
+      "severity": "low"
+    },
+    "prepositions_place": {
+      "label": "Prepositions of place",
+      "description": "Incorrect prepositions for location",
+      "examples": ["I am on the airport", "She lives in New York City"],
+      "patterns": [
+        "\\bon\\s+(the\\s+)?(airport|hospital|school|university|station)\\b",
+        "\\bat\\s+(New York|London|Paris|Tokyo|city|town|country)\\b"
+      ],
+      "cefr_levels": ["A2", "B1"],
+      "severity": "low"
+    },
+    "word_order": {
+      "label": "Word order",
+      "description": "Incorrect sentence structure",
+      "examples": ["Yesterday I to the store went", "Always I wake up early"],
+      "patterns": [
+        "\\b(Yesterday|Today|Tomorrow|Last\\s+(?:week|month|year)|Next\\s+(?:week|month|year))\\s+(I|you|we|they|he|she|it)\\s+(?:to\\s+)?(?:the\\s+)?[a-z]+\\s+(?:went|came|saw|did|ate|bought)"
+      ],
+      "cefr_levels": ["A1", "A2", "B1"],
+      "severity": "high"
+    },
+    "comparative": {
+      "label": "Comparative adjectives",
+      "description": "Incorrect comparative forms",
+      "examples": ["more big", "more better", "gooder"],
+      "patterns": [
+        "\\bmore\\s+(big|small|tall|short|fast|slow|cheap|expensive|old|young|hot|cold|long|short|easy|hard|difficult|simple|fast|slow)\\b",
+        "\\b(gooder|badder|more\\s+better|more\\s+worse)\\b"
+      ],
+      "cefr_levels": ["A2", "B1"],
+      "severity": "medium"
+    },
+    "superlative": {
+      "label": "Superlative adjectives",
+      "description": "Incorrect superlative forms",
+      "examples": ["the most big", "the bestest", "more beautiful than"],
+      "patterns": [
+        "\\bthe\\s+most\\s+(big|small|tall|short|fast|slow|cheap|expensive|old|young|hot|cold|long|short|easy|hard)\\b",
+        "\\b(bestest|goodest|most\\s+best)\\b"
+      ],
+      "cefr_levels": ["A2", "B1"],
+      "severity": "medium"
+    },
+    "subject_verb_agreement": {
+      "label": "Subject-verb agreement",
+      "description": "Mismatched subject and verb forms",
+      "examples": ["They goes", "We was", "The people is"],
+      "patterns": [
+        "\\b(they|we|you|the\\s+people|my\\s+parents|my\\s+friends)\\s+(?:is|was|has|does)\\b",
+        "\\b(he|she|it|the\\s+person|my\\s+friend|my\\s+mother|my\\s+father)\\s+(?:are|were|have|do)\\b"
+      ],
+      "cefr_levels": ["A1", "A2", "B1"],
+      "severity": "high"
+    },
+    "countable_uncountable": {
+      "label": "Countable/uncountable nouns",
+      "description": "Incorrect use with many/much, few/little",
+      "examples": ["many water", "much books", "a few milk"],
+      "patterns": [
+        "\\bmany\\s+(water|money|time|information|advice|furniture|equipment|luggage|baggage|bread|rice|sugar|salt|butter|milk|coffee|tea|wine|beer|oil|gas|paper|glass|wood|gold|silver|hair|knowledge|news|progress|research|traffic|weather|work|homework|housework|fun|health|help|luck|peace|pollution|poverty|power|space)\\b",
+        "\\bmuch\\s+(books|friends|students|people|cars|houses|apples|chairs|tables|computers|phones|days|weeks|months|years|times|problems|questions|answers|ideas|reasons|examples)\\b"
+      ],
+      "cefr_levels": ["B1", "B2"],
+      "severity": "medium"
+    },
+    "conditional_first": {
+      "label": "First conditional",
+      "description": "Errors in first conditional (if + present, will + verb)",
+      "examples": ["If I will go, I see you", "If it rains, I will staying home"],
+      "patterns": [
+        "\\bif\\s+(?:I|you|we|they|he|she|it)\\s+will\\s+[a-z]+",
+        "\\bif\\s+(?:I|you|we|they|he|she|it)\\s+(?:[a-z]+)\\s*,\\s*(?:I|you|we|they|he|she|it)\\s+(?:[a-z]+)(?<!will)\\s+[a-z]+"
+      ],
+      "cefr_levels": ["B1", "B2"],
+      "severity": "medium"
+    },
+    "modal_verbs": {
+      "label": "Modal verbs",
+      "description": "Incorrect modal verb usage",
+      "examples": ["I can to swim", "She musts go", "We should to study"],
+      "patterns": [
+        "\\b(can|could|should|would|might|may|must)\\s+to\\s+[a-z]+",
+        "\\b(can|could|should|would|might|may|must)s\\s+[a-z]+"
+      ],
+      "cefr_levels": ["A2", "B1"],
+      "severity": "medium"
+    },
+    "question_formation": {
+      "label": "Question formation",
+      "description": "Incorrect question word order",
+      "examples": ["You are happy?", "Where you live?", "What time is it?"],
+      "patterns": [
+        "\\b(You|We|They|He|She|It)\\s+(are|is|do|does|did|can|could|will|would|have|has)\\s*[?]",
+        "\\b(Where|What|When|Why|How|Who|Which)\\s+(you|we|they|he|she|it)\\s+(?:[a-z]+)(?!\\s+(?:is|are|do|does|did|can|could|will|would|have|has))"
+      ],
+      "cefr_levels": ["A1", "A2"],
+      "severity": "high"
+    },
+    "double_negative": {
+      "label": "Double negatives",
+      "description": "Incorrect use of double negatives",
+      "examples": ["I don't have nothing", "She doesn't know nobody"],
+      "patterns": [
+        "\\bdon't\\s+(?:have|know|see|want|need|like)\\s+(?:nothing|nobody|no one|nowhere|none|never)\\b",
+        "\\bdoesn't\\s+(?:have|know|see|want|need|like)\\s+(?:nothing|nobody|no one|nowhere|none|never)\\b",
+        "\\bcan't\\s+(?:find|see|do|get|make)\\s+(?:nothing|nobody|no one|nowhere|none|never)\\b"
+      ],
+      "cefr_levels": ["A2", "B1"],
+      "severity": "medium"
+    }
+  },
+  "correction_templates": {
+    "third_person_s": {
+      "explanation": "In present simple, verbs with he/she/it need -s or -es at the end.",
+      "example": "'He goes' (not 'He go')",
+      "practice": "Practice with: he works, she plays, it costs"
+    },
+    "past_simple_regular": {
+      "explanation": "Regular verbs in past simple add -ed to the base form.",
+      "example": "'I walked' (not 'I walk yesterday')",
+      "practice": "Practice with: played, worked, studied, started"
+    },
+    "past_simple_irregular": {
+      "explanation": "Some common verbs have irregular past forms that must be memorized.",
+      "example": "'I went' (not 'I goed'), 'She took' (not 'She taked')",
+      "practice": "Common irregulars: go-went, take-took, see-saw, eat-ate"
+    },
+    "present_perfect": {
+      "explanation": "Present perfect uses have/has + past participle (not past simple).",
+      "example": "'I have seen' (not 'I have saw')",
+      "practice": "Practice: have gone, has taken, have eaten, has written"
+    },
+    "article_usage": {
+      "explanation": "Singular countable nouns usually need 'a', 'an', or 'the' before them.",
+      "example": "'I am a student' (not 'I am student')",
+      "practice": "Use 'a' before consonants, 'an' before vowel sounds"
+    },
+    "plural_nouns": {
+      "explanation": "Most nouns add -s to show there is more than one.",
+      "example": "'Two books' (not 'Two book')",
+      "practice": "Remember: many friends, several cities, a few ideas"
+    },
+    "prepositions_time": {
+      "explanation": "Use 'on' for days, 'in' for months/years, 'at' for specific times.",
+      "example": "'On Monday', 'in December', 'at 5 o'clock'",
+      "practice": "on + days, in + months/seasons/years, at + times"
+    },
+    "prepositions_place": {
+      "explanation": "Use 'at' for specific points, 'in' for enclosed spaces, 'on' for surfaces.",
+      "example": "'At the airport', 'in the city', 'on the table'",
+      "practice": "at + specific places, in + cities/countries/rooms"
+    },
+    "word_order": {
+      "explanation": "English typically follows Subject-Verb-Object order.",
+      "example": "'Yesterday I went to the store' (not 'Yesterday I to the store went')",
+      "practice": "Subject first, then verb, then object/other information"
+    },
+    "comparative": {
+      "explanation": "Short adjectives add -er; longer ones use 'more'. Good → better, bad → worse.",
+      "example": "'Bigger' (not 'more big'), 'better' (not 'gooder')",
+      "practice": "tall → taller, expensive → more expensive, good → better"
+    },
+    "superlative": {
+      "explanation": "Short adjectives add -est; longer ones use 'most'. Good → best, bad → worst.",
+      "example": "'The biggest' (not 'the most big'), 'the best' (not 'the bestest')",
+      "practice": "tall → tallest, beautiful → most beautiful"
+    },
+    "subject_verb_agreement": {
+      "explanation": "Plural subjects need plural verbs; singular subjects need singular verbs.",
+      "example": "'They go' (not 'They goes'), 'He goes' (not 'He go')",
+      "practice": "I/you/we/they + base verb; he/she/it + verb+s"
+    },
+    "countable_uncountable": {
+      "explanation": "Use 'much' with uncountable nouns; 'many' with countable nouns.",
+      "example": "'Much water', 'many books' (not 'many water')",
+      "practice": "much + uncountable (water, time), many + countable (books, friends)"
+    },
+    "conditional_first": {
+      "explanation": "First conditional: If + present simple, will + base verb.",
+      "example": "'If it rains, I will stay home' (not 'If it will rain')",
+      "practice": "If + present, will + verb (no 'to' between)"
+    },
+    "modal_verbs": {
+      "explanation": "Modal verbs (can, should, must) are followed directly by the base verb.",
+      "example": "'I can swim' (not 'I can to swim'), 'She must go' (not 'She musts go')",
+      "practice": "can/could/should/would/might/may/must + base verb (no 'to')"
+    },
+    "question_formation": {
+      "explanation": "Questions need auxiliary verb before the subject: Are you...? Do you...?",
+      "example": "'Are you happy?' (not 'You are happy?'), 'Where do you live?'",
+      "practice": "Auxiliary (are/do/does/did/can/will) + subject + main verb"
+    },
+    "double_negative": {
+      "explanation": "Standard English uses only one negative word per clause.",
+      "example": "'I don't have anything' (not 'I don't have nothing')",
+      "practice": "Use 'anything/anyone/anywhere' with negative verbs"
+    }
+  }
+}

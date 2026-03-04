@@ -1,0 +1,16 @@
+{
+  "fillers": {
+    "uh": { "pattern": "\\buh+\\b", "label": "uh", "severity": "high" },
+    "um": { "pattern": "\\bum+\\b", "label": "um", "severity": "high" },
+    "like": { "pattern": "\\blike\\b(?!\\s+(to|that|it|this|how|when|what|the|a|an))", "label": "like (discourse)", "severity": "medium" },
+    "you_know": { "pattern": "\\byou know\\b", "label": "you know", "severity": "medium" },
+    "basically": { "pattern": "\\bbasically\\b", "label": "basically", "severity": "medium" },
+    "literally": { "pattern": "\\bliterally\\b", "label": "literally", "severity": "low" },
+    "actually": { "pattern": "\\bactually\\b", "label": "actually (filler use)", "severity": "low" },
+    "so": { "pattern": "^so\\b|\\bso so\\b", "label": "so (sentence starter)", "severity": "low" },
+    "right": { "pattern": "\\bright\\?|\\bright,", "label": "right (tag filler)", "severity": "low" },
+    "i_mean": { "pattern": "\\bi mean\\b", "label": "I mean", "severity": "medium" },
+    "kind_of": { "pattern": "\\bkind of\\b", "label": "kind of", "severity": "medium" },
+    "sort_of": { "pattern": "\\bsort of\\b", "label": "sort of", "severity": "medium" }
+  }
+}
